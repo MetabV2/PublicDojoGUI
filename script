@@ -1,7 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
 
 local InsertedObjects = Instance.new("ScreenGui")
 local Gradient = Instance.new("Frame")
@@ -24,8 +20,18 @@ local TextLabel_5 = Instance.new("TextLabel")
 local Button_6 = Instance.new("TextButton")
 local TextLabel_6 = Instance.new("TextLabel")
 local Shadow_6 = Instance.new("Frame")
+local Button_7 = Instance.new("TextButton")
 local TextLabel_7 = Instance.new("TextLabel")
+local Shadow_7 = Instance.new("Frame")
+local Button_8 = Instance.new("TextButton")
+local Shadow_8 = Instance.new("Frame")
 local TextLabel_8 = Instance.new("TextLabel")
+local Button_9 = Instance.new("TextButton")
+local Shadow_9 = Instance.new("Frame")
+local TextLabel_9 = Instance.new("TextLabel")
+local TextLabel_10 = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+local CloseButton = Instance.new("ImageButton")
 
 --Properties:
 
@@ -162,7 +168,7 @@ Button_4.Name = "Button"
 Button_4.Parent = ScrollingFrame
 Button_4.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
 Button_4.BorderSizePixel = 0
-Button_4.Position = UDim2.new(0.0709219873, 0, 0.240731508, 0)
+Button_4.Position = UDim2.new(0.0709219873, 0, 0.404295325, 0)
 Button_4.Size = UDim2.new(0, 171, 0, 45)
 Button_4.ZIndex = 2
 Button_4.Font = Enum.Font.GothamSemibold
@@ -199,7 +205,7 @@ Button_5.Name = "Button"
 Button_5.Parent = ScrollingFrame
 Button_5.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
 Button_5.BorderSizePixel = 0
-Button_5.Position = UDim2.new(0.0709219873, 0, 0.321848512, 0)
+Button_5.Position = UDim2.new(0.0709219873, 0, 0.485412359, 0)
 Button_5.Size = UDim2.new(0, 171, 0, 45)
 Button_5.ZIndex = 2
 Button_5.Font = Enum.Font.GothamSemibold
@@ -236,7 +242,7 @@ Button_6.Name = "Button"
 Button_6.Parent = ScrollingFrame
 Button_6.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
 Button_6.BorderSizePixel = 0
-Button_6.Position = UDim2.new(0.0709219873, 0, 0.406954885, 0)
+Button_6.Position = UDim2.new(0.0709219873, 0, 0.570518732, 0)
 Button_6.Size = UDim2.new(0, 171, 0, 45)
 Button_6.ZIndex = 2
 Button_6.Font = Enum.Font.GothamSemibold
@@ -269,35 +275,156 @@ Shadow_6.BorderSizePixel = 0
 Shadow_6.Position = UDim2.new(-0.00588235306, 0, 0, 0)
 Shadow_6.Size = UDim2.new(1.00588238, 0, 1, 4)
 
-TextLabel_7.Parent = Gradient
+Button_7.Name = "Button"
+Button_7.Parent = ScrollingFrame
+Button_7.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_7.BorderSizePixel = 0
+Button_7.Position = UDim2.new(0.0709219873, 0, 0.655625105, 0)
+Button_7.Size = UDim2.new(0, 171, 0, 45)
+Button_7.ZIndex = 2
+Button_7.Font = Enum.Font.GothamSemibold
+Button_7.Text = ""
+Button_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_7.TextScaled = true
+Button_7.TextSize = 14.000
+Button_7.TextWrapped = true
+
+TextLabel_7.Parent = Button_7
+TextLabel_7.AnchorPoint = Vector2.new(0.5, 0.5)
 TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_7.BackgroundTransparency = 1.000
-TextLabel_7.BorderColor3 = Color3.fromRGB(0, 255, 217)
-TextLabel_7.BorderSizePixel = 5
-TextLabel_7.Position = UDim2.new(0, 0, -0.0936543867, 0)
-TextLabel_7.Size = UDim2.new(0, 199, 0, 50)
-TextLabel_7.Font = Enum.Font.GothamBlack
-TextLabel_7.Text = "BY NOCTURNEMODZ"
-TextLabel_7.TextColor3 = Color3.fromRGB(85, 255, 127)
-TextLabel_7.TextSize = 18.000
+TextLabel_7.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.497058809, 0, 0.544444442, 0)
+TextLabel_7.Size = UDim2.new(1.01176476, -20, 1, -20)
+TextLabel_7.ZIndex = 2
+TextLabel_7.Font = Enum.Font.GothamSemibold
+TextLabel_7.Text = "LOOP NAME"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
 TextLabel_7.TextWrapped = true
 
-TextLabel_8.Parent = Gradient
+Shadow_7.Name = "Shadow"
+Shadow_7.Parent = Button_7
+Shadow_7.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_7.BorderSizePixel = 0
+Shadow_7.Position = UDim2.new(-0.00588235306, 0, 0, 0)
+Shadow_7.Size = UDim2.new(1.00588238, 0, 1, 4)
+
+Button_8.Name = "Button"
+Button_8.Parent = ScrollingFrame
+Button_8.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_8.BorderSizePixel = 0
+Button_8.Position = UDim2.new(0.0709219873, 0, 0.238071918, 0)
+Button_8.Size = UDim2.new(0, 171, 0, 45)
+Button_8.ZIndex = 2
+Button_8.Font = Enum.Font.GothamSemibold
+Button_8.Text = ""
+Button_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_8.TextScaled = true
+Button_8.TextSize = 14.000
+Button_8.TextWrapped = true
+
+Shadow_8.Name = "Shadow"
+Shadow_8.Parent = Button_8
+Shadow_8.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_8.BorderSizePixel = 0
+Shadow_8.Position = UDim2.new(-0.00588235306, 0, 0, 0)
+Shadow_8.Size = UDim2.new(1.00588238, 0, 1, 4)
+
+TextLabel_8.Parent = Button_8
+TextLabel_8.AnchorPoint = Vector2.new(0.5, 0.5)
 TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_8.BackgroundTransparency = 1.000
-TextLabel_8.BorderColor3 = Color3.fromRGB(0, 255, 217)
-TextLabel_8.BorderSizePixel = 5
-TextLabel_8.Position = UDim2.new(-0.0450000018, 0, -0.0936543867, 0)
-TextLabel_8.Size = UDim2.new(0, 218, 0, 50)
-TextLabel_8.Font = Enum.Font.GothamBlack
-TextLabel_8.Text = "BY NOCTURNEMODZ"
-TextLabel_8.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_8.TextSize = 17.000
+TextLabel_8.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0.497058809, 0, 0.5, 0)
+TextLabel_8.Size = UDim2.new(1.01176476, -20, 1, -20)
+TextLabel_8.ZIndex = 2
+TextLabel_8.Font = Enum.Font.GothamSemibold
+TextLabel_8.Text = "Kick 1"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
 TextLabel_8.TextWrapped = true
+
+Button_9.Name = "Button"
+Button_9.Parent = ScrollingFrame
+Button_9.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button_9.BorderSizePixel = 0
+Button_9.Position = UDim2.new(0.0709219873, 0, 0.319188952, 0)
+Button_9.Size = UDim2.new(0, 171, 0, 45)
+Button_9.ZIndex = 2
+Button_9.Font = Enum.Font.GothamSemibold
+Button_9.Text = ""
+Button_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_9.TextScaled = true
+Button_9.TextSize = 14.000
+Button_9.TextWrapped = true
+
+Shadow_9.Name = "Shadow"
+Shadow_9.Parent = Button_9
+Shadow_9.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_9.BorderSizePixel = 0
+Shadow_9.Position = UDim2.new(-0.00588235306, 0, 0, 0)
+Shadow_9.Size = UDim2.new(1.00588238, 0, 1, 4)
+
+TextLabel_9.Parent = Button_9
+TextLabel_9.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0.497058809, 0, 0.5, 0)
+TextLabel_9.Size = UDim2.new(1.01176476, -20, 1, -20)
+TextLabel_9.ZIndex = 2
+TextLabel_9.Font = Enum.Font.GothamSemibold
+TextLabel_9.Text = "Kick 2"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+TextLabel_10.Parent = Gradient
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.BorderColor3 = Color3.fromRGB(0, 255, 217)
+TextLabel_10.BorderSizePixel = 5
+TextLabel_10.Position = UDim2.new(0, 0, -0.0936543867, 0)
+TextLabel_10.Size = UDim2.new(0, 199, 0, 50)
+TextLabel_10.Font = Enum.Font.GothamBlack
+TextLabel_10.Text = "BY NOCTURNEMODZ"
+TextLabel_10.TextColor3 = Color3.fromRGB(85, 255, 127)
+TextLabel_10.TextSize = 18.000
+TextLabel_10.TextWrapped = true
+
+TextLabel_11.Parent = Gradient
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.BorderColor3 = Color3.fromRGB(0, 255, 217)
+TextLabel_11.BorderSizePixel = 5
+TextLabel_11.Position = UDim2.new(-0.0450000018, 0, -0.0936543867, 0)
+TextLabel_11.Size = UDim2.new(0, 218, 0, 50)
+TextLabel_11.Font = Enum.Font.GothamBlack
+TextLabel_11.Text = "BY NOCTURNEMODZ"
+TextLabel_11.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_11.TextSize = 17.000
+TextLabel_11.TextWrapped = true
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = Gradient
+CloseButton.AnchorPoint = Vector2.new(0.5, 0.5)
+CloseButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.BackgroundTransparency = 1.000
+CloseButton.BorderSizePixel = 0
+CloseButton.Position = UDim2.new(1.00272465, 0, -0.00527913496, 0)
+CloseButton.Size = UDim2.new(0.0772084743, 0, 0.0371540226, 0)
+CloseButton.Image = "rbxassetid://6928031664"
 
 -- Scripts:
 
-local function UXBBSJP_fake_script() -- Gradient.LocalScript 
+local function BHFJDSH_fake_script() -- Gradient.LocalScript 
 	local script = Instance.new('LocalScript', Gradient)
 
 	
@@ -375,8 +502,8 @@ local function UXBBSJP_fake_script() -- Gradient.LocalScript
 	
 	
 end
-coroutine.wrap(UXBBSJP_fake_script)()
-local function BCOXVKG_fake_script() -- Button.Script 
+coroutine.wrap(BHFJDSH_fake_script)()
+local function KUBIX_fake_script() -- Button.Script 
 	local script = Instance.new('Script', Button)
 
 	local button = script.Parent
@@ -390,8 +517,8 @@ local function BCOXVKG_fake_script() -- Button.Script
 	
 	
 end
-coroutine.wrap(BCOXVKG_fake_script)()
-local function XERYU_fake_script() -- Button_2.Script 
+coroutine.wrap(KUBIX_fake_script)()
+local function GXSAJ_fake_script() -- Button_2.Script 
 	local script = Instance.new('Script', Button_2)
 
 	local button = script.Parent
@@ -399,6 +526,7 @@ local function XERYU_fake_script() -- Button_2.Script
 	local function onButtonActivated()
 		while wait() do
 			game:GetService("ReplicatedStorage").Remotes.Attack:FireServer("Punch")
+			
 		end
 	
 	end
@@ -406,25 +534,28 @@ local function XERYU_fake_script() -- Button_2.Script
 	button.Activated:Connect(onButtonActivated)
 	
 end
-coroutine.wrap(XERYU_fake_script)()
-local function DRKSPGZ_fake_script() -- Button_3.Script 
+coroutine.wrap(GXSAJ_fake_script)()
+local function HGTLPE_fake_script() -- Button_3.Script 
 	local script = Instance.new('Script', Button_3)
 
 	local button = script.Parent
 	
 	local function onButtonActivated()
+		
 		while wait() do
-			game:GetService("ReplicatedStorage").Remotes.Block:FireServer()
-		end
-	
+			game:GetService("ReplicatedStorage").Remotes.Block:FireServer() 
+			end
+				
 	end
 	
 	button.Activated:Connect(onButtonActivated)
 	
 	
+	
+	
 end
-coroutine.wrap(DRKSPGZ_fake_script)()
-local function TLKIEAD_fake_script() -- Button_4.Script 
+coroutine.wrap(HGTLPE_fake_script)()
+local function KQASEQ_fake_script() -- Button_4.Script 
 	local script = Instance.new('Script', Button_4)
 
 	
@@ -441,8 +572,8 @@ local function TLKIEAD_fake_script() -- Button_4.Script
 	button.Activated:Connect(onButtonActivated)
 	
 end
-coroutine.wrap(TLKIEAD_fake_script)()
-local function RSYVPGZ_fake_script() -- Button_5.Script 
+coroutine.wrap(KQASEQ_fake_script)()
+local function WKRR_fake_script() -- Button_5.Script 
 	local script = Instance.new('Script', Button_5)
 
 	
@@ -452,6 +583,7 @@ local function RSYVPGZ_fake_script() -- Button_5.Script
 	local function onButtonActivated()
 		while wait() do
 			game:GetService("ReplicatedStorage").Remotes.LeaveMatch:FireServer()
+			
 		end
 	
 	end
@@ -459,22 +591,141 @@ local function RSYVPGZ_fake_script() -- Button_5.Script
 	button.Activated:Connect(onButtonActivated)
 	
 end
-coroutine.wrap(RSYVPGZ_fake_script)()
-local function AQDP_fake_script() -- Button_6.Script 
+coroutine.wrap(WKRR_fake_script)()
+local function RGHYD_fake_script() -- Button_6.Script 
 	local script = Instance.new('Script', Button_6)
 
-	
 	
 	local button = script.Parent
 	
 	local function onButtonActivated()
 		while wait() do
 			game.ReplicatedStorage.Remotes.AFK:FireServer(true)
+			script.disable = true 
+			
 		end
+	
+	end
+	
+	
+	button.Activated:Connect(onButtonActivated)
+	
+end
+coroutine.wrap(RGHYD_fake_script)()
+local function UWTYV_fake_script() -- Button_7.Script 
+	local script = Instance.new('Script', Button_7)
+
+	
+	local button = script.Parent
+	
+	local function onButtonActivated()
+		while true do 
+			wait(2)
+			game:GetService("ReplicatedStorage").Remotes.CustomName:FireServer("My")
+			wait(2)
+			game:GetService("ReplicatedStorage").Remotes.CustomName:FireServer("My Name")
+			wait(2)
+			game:GetService("ReplicatedStorage").Remotes.CustomName:FireServer("Is")
+			wait(2)
+			game:GetService("ReplicatedStorage").Remotes.CustomName:FireServer("John")
+			wait(2)
+			game:GetService("ReplicatedStorage").Remotes.CustomName:FireServer("Cena")
+			wait(2)
+	
+	end
 	
 	end
 	
 	button.Activated:Connect(onButtonActivated)
 	
+	
 end
-coroutine.wrap(AQDP_fake_script)()
+coroutine.wrap(UWTYV_fake_script)()
+local function OHVARU_fake_script() -- Button_8.Script 
+	local script = Instance.new('Script', Button_8)
+
+	local button = script.Parent
+	
+	local function onButtonActivated()
+		
+		while wait() do
+	
+			game:GetService("ReplicatedStorage").Remotes.Attack:FireServer("Kick1")		
+		end
+				
+	end
+	
+	button.Activated:Connect(onButtonActivated)
+	
+	
+	
+	
+end
+coroutine.wrap(OHVARU_fake_script)()
+local function ZDTKNZ_fake_script() -- Button_9.Script 
+	local script = Instance.new('Script', Button_9)
+
+	local button = script.Parent
+	
+	local function onButtonActivated()
+		
+		while wait() do
+	
+			game:GetService("ReplicatedStorage").Remotes.Attack:FireServer("Kick2")		
+		end
+				
+	end
+	
+	button.Activated:Connect(onButtonActivated)
+	
+	
+	
+	
+end
+coroutine.wrap(ZDTKNZ_fake_script)()
+local function QKXK_fake_script() -- TextLabel_10.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_10)
+
+	while true do
+		script.Parent.TextColor3 = Color3.new (255, 176, 0)
+		wait(.7)
+		script.Parent.TextColor3 = Color3.new (0, 255, 0)
+		wait(.7)
+		script.Parent.TextColor3 = Color3.new (255, 0, 0)
+		wait(.7)
+		script.Parent.TextColor3 = Color3.new (170, 85, 0)
+		wait(.7)
+		script.Parent.TextColor3 = Color3.new (106, 57, 9)
+		wait(.7)
+		script.Parent.TextColor3 = Color3.new (0, 16, 176)
+		wait(.7)
+	end
+end
+coroutine.wrap(QKXK_fake_script)()
+local function IIIJHBW_fake_script() -- CloseButton.LocalScript 
+	local script = Instance.new('LocalScript', CloseButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(IIIJHBW_fake_script)()
+local function XCSAU_fake_script() -- Gradient.LocalScript 
+	local script = Instance.new('LocalScript', Gradient)
+
+	while true do
+		script.Parent.BackgroundColor3 = Color3.new (255, 176, 0)
+		wait(.7)
+		script.Parent.BackgroundColor3 = Color3.new (0, 255, 0)
+		wait(.7)
+		script.Parent.BackgroundColor3 = Color3.new (255, 0, 0)
+		wait(.7)
+		script.Parent.BackgroundColor3 = Color3.new (170, 85, 0)
+		wait(.7)
+		script.Parent.BackgroundColor3 = Color3.new (106, 57, 9)
+		wait(.7)
+		script.Parent.BackgroundColor3 = Color3.new (0, 16, 176)
+		wait(.7)
+	end
+end
+coroutine.wrap(XCSAU_fake_script)()
