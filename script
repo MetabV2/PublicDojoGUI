@@ -1,431 +1,101 @@
 
 local InsertedObjects = Instance.new("ScreenGui")
-local Gradient = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
 local ScrollingFrame = Instance.new("ScrollingFrame")
-local Button = Instance.new("TextButton")
-local Shadow = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
-local Button_2 = Instance.new("TextButton")
-local Shadow_2 = Instance.new("Frame")
-local TextLabel_2 = Instance.new("TextLabel")
-local Button_3 = Instance.new("TextButton")
-local Shadow_3 = Instance.new("Frame")
-local TextLabel_3 = Instance.new("TextLabel")
-local Button_4 = Instance.new("TextButton")
-local Shadow_4 = Instance.new("Frame")
-local TextLabel_4 = Instance.new("TextLabel")
-local Button_5 = Instance.new("TextButton")
-local Shadow_5 = Instance.new("Frame")
-local TextLabel_5 = Instance.new("TextLabel")
-local Button_6 = Instance.new("TextButton")
-local TextLabel_6 = Instance.new("TextLabel")
-local Shadow_6 = Instance.new("Frame")
-local Button_7 = Instance.new("TextButton")
-local TextLabel_7 = Instance.new("TextLabel")
-local Shadow_7 = Instance.new("Frame")
-local Button_8 = Instance.new("TextButton")
-local Shadow_8 = Instance.new("Frame")
-local TextLabel_8 = Instance.new("TextLabel")
-local Button_9 = Instance.new("TextButton")
-local Shadow_9 = Instance.new("Frame")
-local TextLabel_9 = Instance.new("TextLabel")
-local TextLabel_10 = Instance.new("TextLabel")
-local TextLabel_11 = Instance.new("TextLabel")
+local Button2 = Instance.new("ImageButton")
+local BtnText = Instance.new("TextLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local UIGradient = Instance.new("UIGradient")
 local CloseButton = Instance.new("ImageButton")
+local UIGradient_2 = Instance.new("UIGradient")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local ImageButton = Instance.new("ImageButton")
 
 --Properties:
 
 InsertedObjects.Name = "InsertedObjects"
-InsertedObjects.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+InsertedObjects.Parent = game.CoreGui
+InsertedObjects.ResetOnSpawn = false
 
-Gradient.Name = "Gradient"
-Gradient.Parent = InsertedObjects
-Gradient.BackgroundColor3 = Color3.fromRGB(85, 255, 127)
-Gradient.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Gradient.BorderSizePixel = 5
-Gradient.Position = UDim2.new(0.345923603, 0, 0.185618728, 0)
-Gradient.Size = UDim2.new(0, 200, 0, 376)
+ImageLabel.Parent = InsertedObjects
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.0394712277, 0, 0.104501605, 0)
+ImageLabel.Size = UDim2.new(0, 755, 0, 492)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=7402946493"
 
-ScrollingFrame.Parent = Gradient
+ScrollingFrame.Parent = ImageLabel
 ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ScrollingFrame.BackgroundTransparency = 1.000
 ScrollingFrame.BorderSizePixel = 0
-ScrollingFrame.Size = UDim2.new(0, 200, 0, 376)
+ScrollingFrame.Position = UDim2.new(0.36953643, 0, 0.380081296, 0)
+ScrollingFrame.Size = UDim2.new(0, 195, 0, 243)
 
-Button.Name = "Button"
-Button.Parent = ScrollingFrame
-Button.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-Button.BorderSizePixel = 0
-Button.Position = UDim2.new(0.0709219873, 0, 0.00668895105, 0)
-Button.Size = UDim2.new(0, 171, 0, 45)
-Button.ZIndex = 2
-Button.Font = Enum.Font.GothamSemibold
-Button.Text = ""
-Button.TextColor3 = Color3.fromRGB(255, 255, 255)
-Button.TextScaled = true
-Button.TextSize = 14.000
-Button.TextWrapped = true
+Button2.Name = "Button 2"
+Button2.Parent = ScrollingFrame
+Button2.AnchorPoint = Vector2.new(1, 1)
+Button2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button2.BackgroundTransparency = 1.000
+Button2.Position = UDim2.new(0.945403278, 0, 0.0641059503, 0)
+Button2.Size = UDim2.new(0.882225692, 0, 0.0763209537, 0)
+Button2.Image = "rbxassetid://2790382281"
+Button2.ImageColor3 = Color3.fromRGB(26, 190, 190)
+Button2.ScaleType = Enum.ScaleType.Slice
+Button2.SliceCenter = Rect.new(4, 4, 252, 252)
 
-Shadow.Name = "Shadow"
-Shadow.Parent = Button
-Shadow.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
-Shadow.BorderSizePixel = 0
-Shadow.Position = UDim2.new(-0.00588235306, 0, 0, 0)
-Shadow.Size = UDim2.new(1.00588238, 0, 1, 4)
+BtnText.Name = "BtnText"
+BtnText.Parent = Button2
+BtnText.AnchorPoint = Vector2.new(0.5, 0.5)
+BtnText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BtnText.BackgroundTransparency = 1.000
+BtnText.BorderSizePixel = 0
+BtnText.Position = UDim2.new(0.498592883, 0, 0.550041258, 0)
+BtnText.Size = UDim2.new(0.891457498, -5, 0.59266752, -5)
+BtnText.Font = Enum.Font.GothamBlack
+BtnText.Text = "KILL ALL"
+BtnText.TextColor3 = Color3.fromRGB(255, 255, 255)
+BtnText.TextScaled = true
+BtnText.TextSize = 5.000
+BtnText.TextWrapped = true
 
-TextLabel.Parent = Button
-TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.497058809, 0, 0.5, 0)
-TextLabel.Size = UDim2.new(1.01176476, -20, 1, -20)
-TextLabel.ZIndex = 2
-TextLabel.Font = Enum.Font.GothamSemibold
-TextLabel.Text = "Fight"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
+UIAspectRatioConstraint.Parent = Button2
+UIAspectRatioConstraint.AspectRatio = 3.042
 
-Button_2.Name = "Button"
-Button_2.Parent = ScrollingFrame
-Button_2.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-Button_2.BorderSizePixel = 0
-Button_2.Position = UDim2.new(0.0709219873, 0, 0.0811570361, 0)
-Button_2.Size = UDim2.new(0, 171, 0, 45)
-Button_2.ZIndex = 2
-Button_2.Font = Enum.Font.GothamSemibold
-Button_2.Text = ""
-Button_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Button_2.TextScaled = true
-Button_2.TextSize = 14.000
-Button_2.TextWrapped = true
-
-Shadow_2.Name = "Shadow"
-Shadow_2.Parent = Button_2
-Shadow_2.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
-Shadow_2.BorderSizePixel = 0
-Shadow_2.Position = UDim2.new(-0.00588235306, 0, 0, 0)
-Shadow_2.Size = UDim2.new(1.00588238, 0, 1, 4)
-
-TextLabel_2.Parent = Button_2
-TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.497058809, 0, 0.5, 0)
-TextLabel_2.Size = UDim2.new(1.01176476, -20, 1, -20)
-TextLabel_2.ZIndex = 2
-TextLabel_2.Font = Enum.Font.GothamSemibold
-TextLabel_2.Text = "Attack"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 14.000
-TextLabel_2.TextWrapped = true
-
-Button_3.Name = "Button"
-Button_3.Parent = ScrollingFrame
-Button_3.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-Button_3.BorderSizePixel = 0
-Button_3.Position = UDim2.new(0.0709219873, 0, 0.159614474, 0)
-Button_3.Size = UDim2.new(0, 171, 0, 45)
-Button_3.ZIndex = 2
-Button_3.Font = Enum.Font.GothamSemibold
-Button_3.Text = ""
-Button_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-Button_3.TextScaled = true
-Button_3.TextSize = 14.000
-Button_3.TextWrapped = true
-
-Shadow_3.Name = "Shadow"
-Shadow_3.Parent = Button_3
-Shadow_3.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
-Shadow_3.BorderSizePixel = 0
-Shadow_3.Position = UDim2.new(-0.00588235306, 0, 0, 0)
-Shadow_3.Size = UDim2.new(1.00588238, 0, 1, 4)
-
-TextLabel_3.Parent = Button_3
-TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TextLabel_3.BorderSizePixel = 0
-TextLabel_3.Position = UDim2.new(0.497058809, 0, 0.5, 0)
-TextLabel_3.Size = UDim2.new(1.01176476, -20, 1, -20)
-TextLabel_3.ZIndex = 2
-TextLabel_3.Font = Enum.Font.GothamSemibold
-TextLabel_3.Text = "Block"
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextScaled = true
-TextLabel_3.TextSize = 14.000
-TextLabel_3.TextWrapped = true
-
-Button_4.Name = "Button"
-Button_4.Parent = ScrollingFrame
-Button_4.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-Button_4.BorderSizePixel = 0
-Button_4.Position = UDim2.new(0.0709219873, 0, 0.404295325, 0)
-Button_4.Size = UDim2.new(0, 171, 0, 45)
-Button_4.ZIndex = 2
-Button_4.Font = Enum.Font.GothamSemibold
-Button_4.Text = ""
-Button_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-Button_4.TextScaled = true
-Button_4.TextSize = 14.000
-Button_4.TextWrapped = true
-
-Shadow_4.Name = "Shadow"
-Shadow_4.Parent = Button_4
-Shadow_4.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
-Shadow_4.BorderSizePixel = 0
-Shadow_4.Position = UDim2.new(-0.00588235306, 0, 0, 0)
-Shadow_4.Size = UDim2.new(1.00588238, 0, 1, 4)
-
-TextLabel_4.Parent = Button_4
-TextLabel_4.AnchorPoint = Vector2.new(0.5, 0.5)
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TextLabel_4.BorderSizePixel = 0
-TextLabel_4.Position = UDim2.new(0.497058809, 0, 0.544444442, 0)
-TextLabel_4.Size = UDim2.new(1.01176476, -20, 1, -20)
-TextLabel_4.ZIndex = 2
-TextLabel_4.Font = Enum.Font.GothamSemibold
-TextLabel_4.Text = "Anti-AFK"
-TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.TextScaled = true
-TextLabel_4.TextSize = 14.000
-TextLabel_4.TextWrapped = true
-
-Button_5.Name = "Button"
-Button_5.Parent = ScrollingFrame
-Button_5.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-Button_5.BorderSizePixel = 0
-Button_5.Position = UDim2.new(0.0709219873, 0, 0.485412359, 0)
-Button_5.Size = UDim2.new(0, 171, 0, 45)
-Button_5.ZIndex = 2
-Button_5.Font = Enum.Font.GothamSemibold
-Button_5.Text = ""
-Button_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-Button_5.TextScaled = true
-Button_5.TextSize = 14.000
-Button_5.TextWrapped = true
-
-Shadow_5.Name = "Shadow"
-Shadow_5.Parent = Button_5
-Shadow_5.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
-Shadow_5.BorderSizePixel = 0
-Shadow_5.Position = UDim2.new(-0.00588235306, 0, 0, 0)
-Shadow_5.Size = UDim2.new(1.00588238, 0, 1, 4)
-
-TextLabel_5.Parent = Button_5
-TextLabel_5.AnchorPoint = Vector2.new(0.5, 0.5)
-TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.BackgroundTransparency = 1.000
-TextLabel_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TextLabel_5.BorderSizePixel = 0
-TextLabel_5.Position = UDim2.new(0.497058809, 0, 0.544444442, 0)
-TextLabel_5.Size = UDim2.new(1.01176476, -20, 1, -20)
-TextLabel_5.ZIndex = 2
-TextLabel_5.Font = Enum.Font.GothamSemibold
-TextLabel_5.Text = "Leave Match"
-TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.TextScaled = true
-TextLabel_5.TextSize = 14.000
-TextLabel_5.TextWrapped = true
-
-Button_6.Name = "Button"
-Button_6.Parent = ScrollingFrame
-Button_6.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-Button_6.BorderSizePixel = 0
-Button_6.Position = UDim2.new(0.0709219873, 0, 0.570518732, 0)
-Button_6.Size = UDim2.new(0, 171, 0, 45)
-Button_6.ZIndex = 2
-Button_6.Font = Enum.Font.GothamSemibold
-Button_6.Text = ""
-Button_6.TextColor3 = Color3.fromRGB(255, 255, 255)
-Button_6.TextScaled = true
-Button_6.TextSize = 14.000
-Button_6.TextWrapped = true
-
-TextLabel_6.Parent = Button_6
-TextLabel_6.AnchorPoint = Vector2.new(0.5, 0.5)
-TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.BackgroundTransparency = 1.000
-TextLabel_6.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TextLabel_6.BorderSizePixel = 0
-TextLabel_6.Position = UDim2.new(0.497058809, 0, 0.544444442, 0)
-TextLabel_6.Size = UDim2.new(1.01176476, -20, 1, -20)
-TextLabel_6.ZIndex = 2
-TextLabel_6.Font = Enum.Font.GothamSemibold
-TextLabel_6.Text = "AFK TROLL"
-TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.TextScaled = true
-TextLabel_6.TextSize = 14.000
-TextLabel_6.TextWrapped = true
-
-Shadow_6.Name = "Shadow"
-Shadow_6.Parent = Button_6
-Shadow_6.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
-Shadow_6.BorderSizePixel = 0
-Shadow_6.Position = UDim2.new(-0.00588235306, 0, 0, 0)
-Shadow_6.Size = UDim2.new(1.00588238, 0, 1, 4)
-
-Button_7.Name = "Button"
-Button_7.Parent = ScrollingFrame
-Button_7.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-Button_7.BorderSizePixel = 0
-Button_7.Position = UDim2.new(0.0709219873, 0, 0.655625105, 0)
-Button_7.Size = UDim2.new(0, 171, 0, 45)
-Button_7.ZIndex = 2
-Button_7.Font = Enum.Font.GothamSemibold
-Button_7.Text = ""
-Button_7.TextColor3 = Color3.fromRGB(255, 255, 255)
-Button_7.TextScaled = true
-Button_7.TextSize = 14.000
-Button_7.TextWrapped = true
-
-TextLabel_7.Parent = Button_7
-TextLabel_7.AnchorPoint = Vector2.new(0.5, 0.5)
-TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_7.BackgroundTransparency = 1.000
-TextLabel_7.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TextLabel_7.BorderSizePixel = 0
-TextLabel_7.Position = UDim2.new(0.497058809, 0, 0.544444442, 0)
-TextLabel_7.Size = UDim2.new(1.01176476, -20, 1, -20)
-TextLabel_7.ZIndex = 2
-TextLabel_7.Font = Enum.Font.GothamSemibold
-TextLabel_7.Text = "LOOP NAME"
-TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_7.TextScaled = true
-TextLabel_7.TextSize = 14.000
-TextLabel_7.TextWrapped = true
-
-Shadow_7.Name = "Shadow"
-Shadow_7.Parent = Button_7
-Shadow_7.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
-Shadow_7.BorderSizePixel = 0
-Shadow_7.Position = UDim2.new(-0.00588235306, 0, 0, 0)
-Shadow_7.Size = UDim2.new(1.00588238, 0, 1, 4)
-
-Button_8.Name = "Button"
-Button_8.Parent = ScrollingFrame
-Button_8.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-Button_8.BorderSizePixel = 0
-Button_8.Position = UDim2.new(0.0709219873, 0, 0.238071918, 0)
-Button_8.Size = UDim2.new(0, 171, 0, 45)
-Button_8.ZIndex = 2
-Button_8.Font = Enum.Font.GothamSemibold
-Button_8.Text = ""
-Button_8.TextColor3 = Color3.fromRGB(255, 255, 255)
-Button_8.TextScaled = true
-Button_8.TextSize = 14.000
-Button_8.TextWrapped = true
-
-Shadow_8.Name = "Shadow"
-Shadow_8.Parent = Button_8
-Shadow_8.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
-Shadow_8.BorderSizePixel = 0
-Shadow_8.Position = UDim2.new(-0.00588235306, 0, 0, 0)
-Shadow_8.Size = UDim2.new(1.00588238, 0, 1, 4)
-
-TextLabel_8.Parent = Button_8
-TextLabel_8.AnchorPoint = Vector2.new(0.5, 0.5)
-TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.BackgroundTransparency = 1.000
-TextLabel_8.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TextLabel_8.BorderSizePixel = 0
-TextLabel_8.Position = UDim2.new(0.497058809, 0, 0.5, 0)
-TextLabel_8.Size = UDim2.new(1.01176476, -20, 1, -20)
-TextLabel_8.ZIndex = 2
-TextLabel_8.Font = Enum.Font.GothamSemibold
-TextLabel_8.Text = "Kick 1"
-TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.TextScaled = true
-TextLabel_8.TextSize = 14.000
-TextLabel_8.TextWrapped = true
-
-Button_9.Name = "Button"
-Button_9.Parent = ScrollingFrame
-Button_9.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-Button_9.BorderSizePixel = 0
-Button_9.Position = UDim2.new(0.0709219873, 0, 0.319188952, 0)
-Button_9.Size = UDim2.new(0, 171, 0, 45)
-Button_9.ZIndex = 2
-Button_9.Font = Enum.Font.GothamSemibold
-Button_9.Text = ""
-Button_9.TextColor3 = Color3.fromRGB(255, 255, 255)
-Button_9.TextScaled = true
-Button_9.TextSize = 14.000
-Button_9.TextWrapped = true
-
-Shadow_9.Name = "Shadow"
-Shadow_9.Parent = Button_9
-Shadow_9.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
-Shadow_9.BorderSizePixel = 0
-Shadow_9.Position = UDim2.new(-0.00588235306, 0, 0, 0)
-Shadow_9.Size = UDim2.new(1.00588238, 0, 1, 4)
-
-TextLabel_9.Parent = Button_9
-TextLabel_9.AnchorPoint = Vector2.new(0.5, 0.5)
-TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_9.BackgroundTransparency = 1.000
-TextLabel_9.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TextLabel_9.BorderSizePixel = 0
-TextLabel_9.Position = UDim2.new(0.497058809, 0, 0.5, 0)
-TextLabel_9.Size = UDim2.new(1.01176476, -20, 1, -20)
-TextLabel_9.ZIndex = 2
-TextLabel_9.Font = Enum.Font.GothamSemibold
-TextLabel_9.Text = "Kick 2"
-TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_9.TextScaled = true
-TextLabel_9.TextSize = 14.000
-TextLabel_9.TextWrapped = true
-
-TextLabel_10.Parent = Gradient
-TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_10.BackgroundTransparency = 1.000
-TextLabel_10.BorderColor3 = Color3.fromRGB(0, 255, 217)
-TextLabel_10.BorderSizePixel = 5
-TextLabel_10.Position = UDim2.new(0, 0, -0.0936543867, 0)
-TextLabel_10.Size = UDim2.new(0, 199, 0, 50)
-TextLabel_10.Font = Enum.Font.GothamBlack
-TextLabel_10.Text = "BY NOCTURNEMODZ"
-TextLabel_10.TextColor3 = Color3.fromRGB(85, 255, 127)
-TextLabel_10.TextSize = 18.000
-TextLabel_10.TextWrapped = true
-
-TextLabel_11.Parent = Gradient
-TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_11.BackgroundTransparency = 1.000
-TextLabel_11.BorderColor3 = Color3.fromRGB(0, 255, 217)
-TextLabel_11.BorderSizePixel = 5
-TextLabel_11.Position = UDim2.new(-0.0450000018, 0, -0.0936543867, 0)
-TextLabel_11.Size = UDim2.new(0, 218, 0, 50)
-TextLabel_11.Font = Enum.Font.GothamBlack
-TextLabel_11.Text = "BY NOCTURNEMODZ"
-TextLabel_11.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_11.TextSize = 17.000
-TextLabel_11.TextWrapped = true
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(19, 143, 143)), ColorSequenceKeypoint.new(0.98, Color3.fromRGB(19, 143, 143)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
+UIGradient.Offset = Vector2.new(-0.349999994, 0)
+UIGradient.Rotation = -135
+UIGradient.Parent = Button2
 
 CloseButton.Name = "CloseButton"
-CloseButton.Parent = Gradient
+CloseButton.Parent = ImageLabel
 CloseButton.AnchorPoint = Vector2.new(0.5, 0.5)
 CloseButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 CloseButton.BackgroundTransparency = 1.000
 CloseButton.BorderSizePixel = 0
-CloseButton.Position = UDim2.new(1.00272465, 0, -0.00527913496, 0)
-CloseButton.Size = UDim2.new(0.0772084743, 0, 0.0371540226, 0)
-CloseButton.Image = "rbxassetid://6928031664"
+CloseButton.Position = UDim2.new(0.628071308, 0, 0.122769609, 0)
+CloseButton.Size = UDim2.new(0.0927402824, 0, 0.0778043792, 0)
+CloseButton.Image = "http://www.roblox.com/asset/?id=7400386959"
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 136, 255))}
+UIGradient_2.Offset = Vector2.new(-0.349999994, 0)
+UIGradient_2.Rotation = -135
+UIGradient_2.Parent = CloseButton
+
+UIAspectRatioConstraint_2.Parent = CloseButton
+UIAspectRatioConstraint_2.AspectRatio = 2.000
+
+ImageButton.Parent = InsertedObjects
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BackgroundTransparency = 1.000
+ImageButton.Position = UDim2.new(0.416326493, 0, 0, 0)
+ImageButton.Size = UDim2.new(0, 123, 0, 60)
+ImageButton.Image = "http://www.roblox.com/asset/?id=7529900564"
 
 -- Scripts:
 
-local function BHFJDSH_fake_script() -- Gradient.LocalScript 
-	local script = Instance.new('LocalScript', Gradient)
+local function WITAAKC_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
 
 	
 	local UIS = game:GetService('UserInputService')
@@ -502,216 +172,9 @@ local function BHFJDSH_fake_script() -- Gradient.LocalScript
 	
 	
 end
-coroutine.wrap(BHFJDSH_fake_script)()
-local function KUBIX_fake_script() -- Button.Script 
-	local script = Instance.new('Script', Button)
-
-	local button = script.Parent
-	
-	local function onButtonActivated()
-	
-			game:GetService("ReplicatedStorage").Remotes.Combat:InvokeServer()
-	end
-	
-	button.Activated:Connect(onButtonActivated)
-	
-	
-end
-coroutine.wrap(KUBIX_fake_script)()
-local function GXSAJ_fake_script() -- Button_2.Script 
-	local script = Instance.new('Script', Button_2)
-
-	local button = script.Parent
-	
-	local function onButtonActivated()
-		while wait() do
-			game:GetService("ReplicatedStorage").Remotes.Attack:FireServer("Punch")
-			
-		end
-	
-	end
-	
-	button.Activated:Connect(onButtonActivated)
-	
-end
-coroutine.wrap(GXSAJ_fake_script)()
-local function HGTLPE_fake_script() -- Button_3.Script 
-	local script = Instance.new('Script', Button_3)
-
-	local button = script.Parent
-	
-	local function onButtonActivated()
-		
-		while wait() do
-			game:GetService("ReplicatedStorage").Remotes.Block:FireServer() 
-			end
-				
-	end
-	
-	button.Activated:Connect(onButtonActivated)
-	
-	
-	
-	
-end
-coroutine.wrap(HGTLPE_fake_script)()
-local function KQASEQ_fake_script() -- Button_4.Script 
-	local script = Instance.new('Script', Button_4)
-
-	
-	
-	local button = script.Parent
-	
-	local function onButtonActivated()
-		while wait() do
-			game:GetService("ReplicatedStorage").Remotes.AFK:FireServer(false)
-		end
-	
-	end
-	
-	button.Activated:Connect(onButtonActivated)
-	
-end
-coroutine.wrap(KQASEQ_fake_script)()
-local function WKRR_fake_script() -- Button_5.Script 
-	local script = Instance.new('Script', Button_5)
-
-	
-	
-	local button = script.Parent
-	
-	local function onButtonActivated()
-		while wait() do
-			game:GetService("ReplicatedStorage").Remotes.LeaveMatch:FireServer()
-			
-		end
-	
-	end
-	
-	button.Activated:Connect(onButtonActivated)
-	
-end
-coroutine.wrap(WKRR_fake_script)()
-local function RGHYD_fake_script() -- Button_6.Script 
-	local script = Instance.new('Script', Button_6)
-
-	
-	local button = script.Parent
-	
-	local function onButtonActivated()
-		while wait() do
-			game.ReplicatedStorage.Remotes.AFK:FireServer(true)
-			script.disable = true 
-			
-		end
-	
-	end
-	
-	
-	button.Activated:Connect(onButtonActivated)
-	
-end
-coroutine.wrap(RGHYD_fake_script)()
-local function UWTYV_fake_script() -- Button_7.Script 
-	local script = Instance.new('Script', Button_7)
-
-	
-	local button = script.Parent
-	
-	local function onButtonActivated()
-		while true do 
-			wait(2)
-			game:GetService("ReplicatedStorage").Remotes.CustomName:FireServer("My")
-			wait(2)
-			game:GetService("ReplicatedStorage").Remotes.CustomName:FireServer("My Name")
-			wait(2)
-			game:GetService("ReplicatedStorage").Remotes.CustomName:FireServer("Is")
-			wait(2)
-			game:GetService("ReplicatedStorage").Remotes.CustomName:FireServer("John")
-			wait(2)
-			game:GetService("ReplicatedStorage").Remotes.CustomName:FireServer("Cena")
-			wait(2)
-	
-	end
-	
-	end
-	
-	button.Activated:Connect(onButtonActivated)
-	
-	
-end
-coroutine.wrap(UWTYV_fake_script)()
-local function OHVARU_fake_script() -- Button_8.Script 
-	local script = Instance.new('Script', Button_8)
-
-	local button = script.Parent
-	
-	local function onButtonActivated()
-		
-		while wait() do
-	
-			game:GetService("ReplicatedStorage").Remotes.Attack:FireServer("Kick1")		
-		end
-				
-	end
-	
-	button.Activated:Connect(onButtonActivated)
-	
-	
-	
-	
-end
-coroutine.wrap(OHVARU_fake_script)()
-local function ZDTKNZ_fake_script() -- Button_9.Script 
-	local script = Instance.new('Script', Button_9)
-
-	local button = script.Parent
-	
-	local function onButtonActivated()
-		
-		while wait() do
-	
-			game:GetService("ReplicatedStorage").Remotes.Attack:FireServer("Kick2")		
-		end
-				
-	end
-	
-	button.Activated:Connect(onButtonActivated)
-	
-	
-	
-	
-end
-coroutine.wrap(ZDTKNZ_fake_script)()
-local function QKXK_fake_script() -- TextLabel_10.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel_10)
-
-	while true do
-		script.Parent.TextColor3 = Color3.new (255, 176, 0)
-		wait(.7)
-		script.Parent.TextColor3 = Color3.new (0, 255, 0)
-		wait(.7)
-		script.Parent.TextColor3 = Color3.new (255, 0, 0)
-		wait(.7)
-		script.Parent.TextColor3 = Color3.new (170, 85, 0)
-		wait(.7)
-		script.Parent.TextColor3 = Color3.new (106, 57, 9)
-		wait(.7)
-		script.Parent.TextColor3 = Color3.new (0, 16, 176)
-		wait(.7)
-	end
-end
-coroutine.wrap(QKXK_fake_script)()
-local function IIIJHBW_fake_script() -- CloseButton.LocalScript 
-	local script = Instance.new('LocalScript', CloseButton)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Visible = false
-	end)
-end
-coroutine.wrap(IIIJHBW_fake_script)()
-local function XCSAU_fake_script() -- Gradient.LocalScript 
-	local script = Instance.new('LocalScript', Gradient)
+coroutine.wrap(WITAAKC_fake_script)()
+local function TLCI_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
 
 	while true do
 		script.Parent.BackgroundColor3 = Color3.new (255, 176, 0)
@@ -728,4 +191,159 @@ local function XCSAU_fake_script() -- Gradient.LocalScript
 		wait(.7)
 	end
 end
-coroutine.wrap(XCSAU_fake_script)()
+coroutine.wrap(TLCI_fake_script)()
+local function LPGNAQ_fake_script() -- Button2.Button7Script 
+	local script = Instance.new('LocalScript', Button2)
+
+	local btn = script.Parent
+	local uiGradient = btn:WaitForChild("UIGradient")
+	
+	local isHovering = false
+	
+	local tweenService = game:GetService("TweenService")
+	local tweenInfo = TweenInfo.new(0.4, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut)
+	
+	local gradientRestoreTween = tweenService:Create(uiGradient, tweenInfo, {Offset = Vector2.new(-0.35, 0)})
+	local gradientAddTween = tweenService:Create(uiGradient, tweenInfo, {Offset = Vector2.new(1, 0)})
+	
+	
+	btn.MouseEnter:Connect(function()
+		
+		isHovering = true
+		
+		gradientAddTween:Play()
+	end)
+	
+	btn.MouseLeave:Connect(function()
+		
+		isHovering = false
+		
+		gradientRestoreTween:Play()
+	end)
+	
+	btn.MouseButton1Down:Connect(function()
+		
+		gradientRestoreTween:Play()
+	end)
+	
+	btn.MouseButton1Up:Connect(function()
+		
+		if not isHovering then
+			gradientRestoreTween:Play()
+		else
+			gradientAddTween:Play()
+		end
+	end)
+end
+coroutine.wrap(LPGNAQ_fake_script)()
+local function IETRTGB_fake_script() -- Button2.METAB SCRIPT 
+	local script = Instance.new('LocalScript', Button2)
+
+	
+	
+	toggle = false
+	script.Parent.MouseButton1Down:connect(function()
+	
+		if toggle == true then 
+			toggle = false 
+		else
+			toggle = true
+		end
+		if toggle == true then 
+			script.Parent.ImageColor3 = Color3.fromRGB(60, 211, 194)
+		end
+		if toggle == false then 
+			script.Parent.ImageColor3 = Color3.fromRGB(26, 190, 190)
+		end
+	
+		if toggle == true then
+			_G.Toggle = true
+			while _G.Toggle do
+	
+					for index, player in pairs(game:GetService("Players"):GetPlayers()) do
+						function teleport()
+							player.Character.HumanoidRootPart.CFrame = game.workspace["Guest 666"].HumanoidRootPart.CFrame
+	
+						end
+						pcall(teleport)
+						wait()
+					end
+				end
+			end
+	
+		if toggle == false then 
+			_G.Toggle = false
+	
+		for index, player in pairs(game:GetService("Players"):GetPlayers()) do
+			function teleport()
+				player.Character.HumanoidRootPart.CFrame = game.workspace["Guest 666"].HumanoidRootPart.CFrame
+	
+			end
+			pcall(teleport)
+			wait()
+		end
+	end
+	end)
+end
+coroutine.wrap(IETRTGB_fake_script)()
+local function HHCM_fake_script() -- CloseButton.LocalScript 
+	local script = Instance.new('LocalScript', CloseButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(HHCM_fake_script)()
+local function XAPRRVX_fake_script() -- CloseButton.ANIME 
+	local script = Instance.new('LocalScript', CloseButton)
+
+	local btn = script.Parent
+	local uiGradient = btn:WaitForChild("UIGradient")
+	
+	local isHovering = false
+	
+	local tweenService = game:GetService("TweenService")
+	local tweenInfo = TweenInfo.new(0.4, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut)
+	
+	local gradientRestoreTween = tweenService:Create(uiGradient, tweenInfo, {Offset = Vector2.new(-0.35, 0)})
+	local gradientAddTween = tweenService:Create(uiGradient, tweenInfo, {Offset = Vector2.new(1, 0)})
+	
+	
+	btn.MouseEnter:Connect(function()
+		
+		isHovering = true
+		
+		gradientAddTween:Play()
+	end)
+	
+	btn.MouseLeave:Connect(function()
+		
+		isHovering = false
+		
+		gradientRestoreTween:Play()
+	end)
+	
+	btn.MouseButton1Down:Connect(function()
+		
+		gradientRestoreTween:Play()
+	end)
+	
+	btn.MouseButton1Up:Connect(function()
+		
+		if not isHovering then
+			gradientRestoreTween:Play()
+		else
+			gradientAddTween:Play()
+		end
+	end)
+end
+coroutine.wrap(XAPRRVX_fake_script)()
+local function CRUBJ_fake_script() -- ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.ImageLabel.Visible = not script.Parent.Parent.ImageLabel.Visible
+	end)
+	
+end
+coroutine.wrap(CRUBJ_fake_script)()
